@@ -10,7 +10,7 @@ namespace LinkedListProblem
         {
             Console.WriteLine("Welcome to DSA Problem");
             Console.WriteLine("Enter the Options to perform: ");
-            Console.WriteLine("1:Custom Linked List\n2:custom Stack");
+            Console.WriteLine("1:Custom Linked List\n2:custom Stack\n3:Custom Queue");
             int options = Convert.ToInt32(Console.ReadLine());
             switch (options)
             {
@@ -34,6 +34,15 @@ namespace LinkedListProblem
                     customStack.Pop();
                     customStack.Peek();
                     customStack.Display();
+                    break;
+                case 3:
+                    CustomQueue queue = new CustomQueue();
+                    queue.Enqueue(56);
+                    queue.Enqueue(30);
+                    queue.Enqueue(70);
+                    queue.Display();
+                    queue.Dequeue(70);
+                   
                     break;
 
             }
